@@ -1,0 +1,126 @@
+.title {
+background-color: #E8D4B0;
+margin: 0;
+padding: 47px 33px 40px 3px;
+text-align: center;
+}
+
+#cookies{
+    margin: 0;
+    background: url('/img/cookies1.jpg')no-repeat center center fixed; 
+    background-size: cover;
+
+}
+#cake{
+    margin: 0;
+    background: url('/img/cake.png') no-repeat center center fixed; 
+    background-size: cover;
+
+}
+#muffin{
+    margin: 0;
+    background: url('/img/muffin1.webp')no-repeat center center fixed; 
+
+    background-size: cover;
+
+
+}
+#index{
+    margin: 0;
+    background: url('/img/home.jpg')no-repeat center center fixed; 
+    
+    background-size: cover;
+}
+.navbar{
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1px;
+    align-items: center;
+    /* text-align: center; */
+    background: brown;
+    padding: 10px 10px 10px 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: burlywood;
+}
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  }
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* .container:hover .front {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  } */
+  .container:hover .text {
+    opacity: 1;
+  }
+  
+  .text {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: burlywood; /* Black see-through */
+    color: #f1f1f1; 
+    width: 459px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+    /* background-color: burlywood;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px; */
+  }
+  .front {
+    /* opacity: 1;
+    display: block;
+    width: 400px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 40%; */
+    display: block;
+    /* width: 100%; */
+    height: auto;
+    
+  }
+ .mid{
+     display: flex;
+    /* display: grid;
+    justify-content: space-between;
+    grid-template: auto / auto auto auto; */
+    /* grid-column-gap: 100px; */
+    padding: 7% 0% ;
+    justify-content: space-evenly;
+    margin-right: 182px;
+/* justify-content: space-between; */
+ }
+.container img{
+
+    width: 500px;
+}
+.container a{
+    text-decoration: none;
+    color: #fff;
+}
