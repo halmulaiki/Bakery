@@ -7,13 +7,26 @@
   </head>
 
   <body id = "muffin">
-    <h1 class = "title">this is where the title</h1>
+   <h1 class = "title">Muffin</h1>
      <nav class = "navbar">
+     <nav><a href="/">Home</a></nav>
       <nav><a href="/cookies">Cookies</a></nav>
-      <nav><a href="/muffin">Muffin</a></nav>
+ 
       <nav><a href="/cake">Cake</a></nav>
+     <nav><a href="/bread">Bread</a></nav>
     </nav>
-
+    <div class="grid-container">
+  <% @arr.each do |run| %>
+  <div>
+    <p> <%= run.name %> </p>
+    <img  src ="<%= run.img%>" >
+    <% run.ingredientLines.each do |description| %>
+    <p><%= description %></p>
+    <% end %>
+       <p>$<%= run.price %></p>
+  </div>
+  <% end %>
+  <% end %>
 
 
     
