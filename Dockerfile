@@ -9,8 +9,8 @@ WORKDIR $APP_HOME
 ADD Gemfile* $APP_HOME/
 RUN gem install bundler
 
-RUN bundle update --bundler
-RUN gem update --system
+RUN gem install bundler -v '2.0.2'
+
 
 ADD . $APP_HOME
 
