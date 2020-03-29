@@ -7,9 +7,10 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
-RUN gem update --system
+RUN gem install bundler
+
 RUN bundle update --bundler
-RUN bundle install --without development test
+RUN gem update --system
 
 ADD . $APP_HOME
 
