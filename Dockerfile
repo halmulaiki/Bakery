@@ -8,7 +8,8 @@ WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
 
-RUN bundle install --without development test
+ENV BUNDLER_VERSION='2.0.2'
+RUN gem install bundler --no-document -v '2.0.2'
 
 ADD . $APP_HOME
 
